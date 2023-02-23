@@ -1,37 +1,55 @@
 *{
     box-sizing: border-box;
 }
-
+body{
+    padding: 0;
+    margin: 0;
+}
 .container{
 
     background-color: rgb(54, 54, 54);
-   padding-bottom: 10px;
+   padding-bottom: 15px;
     margin:auto;
     display:flex;
+    margin-top: 3%;
 
 }
 .upload{
 
 height: 93%;
-margin-top: 10%;
+margin-top: 6%;
 width: 60%;
 display: flex;
 flex-direction: column;
-gap:100px;
-
+gap:9px;
+justify-content: center;
+text-align: center;
 
 }
-.upload img {
-    display: block;
+
+.upload img,canvas {
+
     max-width: 100%;
     max-height: 80%;
 }
-.upload:first-child{
-    display: flex;
+
+#Download{
+
+    border-style:solid;
+    border-color:rgb(53, 102, 102) ;
+    background-color: rgb(53, 102, 102);
+    border-width: 1px;
+    text-decoration: none;
+    margin-left: 20px;
+    text-align: center;
+    justify-content: center;
+    color:beige;
+   padding: 5px 5px;
+
 }
 
-.upload button {
-display: block;
+
+.upload label {
 margin-left: auto;
 margin-right: auto;
 height: 7%;
@@ -41,13 +59,16 @@ background-color: transparent;
 color: lightgray;
 font-size: 20px;
 text-align: center;
-
+padding:5px 10px ;
+}
+.upload input{
+    display: none;
 }
 
 
 .editor{
     height: 93%;
-    margin-top: 3%;
+    margin-top: 1%;
     width: 40%;  
     
 }
@@ -70,7 +91,7 @@ margin-top: 5%;
 }
 .buttons{
 
-   margin-top:5%;
+   margin-top:4%;
    display: flex;
    padding-left: 20%;
 }
@@ -80,6 +101,7 @@ margin-top: 5%;
     border-width: 0px;
     background-color: rgb(53, 102, 102);
     color:beige;
+    padding: 2px 10px ;
 }
 
 @media screen and (max-width:750px){
@@ -92,6 +114,12 @@ margin-top: 5%;
     .editor{
         width:auto;
     }
+}
+
+.hidden{
+
+    display:none; 
+
 }
 
 
